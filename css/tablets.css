@@ -1,0 +1,204 @@
+@media screen and (max-width: 1024px) and (min-width: 421px){
+    header{
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    #inicio{
+        height: 4vh;
+        width:12.5%; 
+    }
+    .logo{
+        background-size: 100%;
+    }
+    header nav ul li:first-child, header nav ul li:nth-child(5){
+        display: none;
+    }
+    nav ul li ul{
+        left: 57.5%;
+    }
+    .rede-social ul{
+        margin-left: -30%;
+    }
+    /* menu scroll */
+   .menu-fixo .logo{
+        height: 3vh;        
+        background-size: 38%;
+    }
+    .menu-fixo nav ul li ul{
+        left: 65.5%;
+    }
+    .menu-fixo #inicio{
+        height: 2.75vh;
+    }    
+    /* slider */
+    .slider-master{
+        
+        height: 40vh;
+    }
+    .slider{
+        width: 90%;
+    }
+    .principal .overflow-hidden div p{
+        position: relative;
+        top: 70%;
+        transition: 0.5s;
+    }
+    .secundario div .overflow-hidden div p{
+        position: relative;
+        top: 75%;
+        transition: 0.5s;
+    }
+    .secundario div .overflow-hidden a div p:last-child{
+        visibility: hidden;
+    }
+    .secundario .overflow-hidden div:hover p{
+        top: 65%; 
+    }
+    .principal .overflow-hidden div:hover p{
+        top: 60%;   
+    }
+    .slider-master button{  
+        padding: 1% 3.5% 1% 3.5%;            
+        top: 22.5%;      
+    }
+    .slider-master button:hover{
+        padding: 1.5% 5.25% 1.5% 5.25%;
+        font-size: 4.5rem;
+        top: 20.5%
+    }
+    .slider-master .anterior{
+        left: 1%;
+    }
+    .slider-master .anterior:hover{
+        left: 1%;
+    }
+    .slider-master .proximo{
+        left: 89%;
+    }
+    .slider-master .proximo:hover{
+        left: 84.5%;
+    } 
+    .ultimas-noticias .rolagem-noticias .noticia{
+        width: 30%;
+        height: 22vh;
+    }    
+    .ultimas-noticias button, .mais-lidas button{
+        padding: 0.25% 1.5% 0.25% 1.5%;               
+    }
+    .ultimas-noticias button{
+        top: 60%;
+    }
+    .ultimas-noticias button:hover, .mais-lidas button:hover{
+        padding: 0.2% 1.45% 0.2% 1.45%;    
+     }
+     .ultimas-noticias button:hover{
+        top: 59.5%;
+     }
+     .ultimas-noticias .anterior{
+         left: 7%;
+     }
+     .ultimas-noticias .proximo{
+         left: 88.55%;
+     }
+     .mais-lidas, .noticias-categoria{
+        margin: 2% 0 2% 0;
+    }    
+    .mais-lidas .noticias-editorias .wpp-list, .noticias-categoria .titulo-noticias-categoria{
+        margin: 0;
+    }
+   .mais-lidas .noticias-editorias .wpp-list li, .noticias-categoria .noticias-categoria-container .noticia-categoria{
+       width: 45%;
+       background-color: #dddddd;
+       margin: 2% 0 2% 0;
+       transition: 0.5s;
+   }
+   .mais-lidas .noticias-editorias .wpp-list li:hover, .noticias-categoria .noticias-categoria-container .noticia-categoria:hover{
+       margin: 1% 0 3% 0;
+       box-shadow: 10px 15px 30px #000000;
+   }
+   .mais-lidas .noticias-editorias .wpp-list li .noticia-editoria div:first-child{
+        margin-bottom: -6%;
+    }
+   footer #desenvolvimento{       
+        min-height: 4.5vh;    
+    }
+    /* pagina */
+    .alinhamento-noticias{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .corpo-noticia{
+        width: 70%;
+        margin: 0 15% 0 15%;
+    }
+    .corpo-noticia .imagem-noticia{
+        height: 40vh;
+    }
+    .corpo-noticia .titulo-noticia{
+        margin-top: 2vh;
+        font-size: 1.5rem;
+    }
+    .corpo-noticia .texto-noticia img{
+        max-width: 70%;
+    }
+    .ultimas-editoria{
+        width: 90%;
+        margin: 2% 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .ultimas-editoria a{
+        width: 32%;
+        height: 7vh;
+    }    
+    .ultimas-editoria a:hover{
+        transform: translate(0);
+        background-color: #979797;  
+    }
+   .ultimas-editoria a:hover .texto-noticia-editoria{       
+        background-color: #979797;
+    }
+    .ultimas-editoria a .img-noticia{
+        width: 30%;
+    }
+    .ultimas-editoria a .texto-noticia-editoria{
+        width: 65%;
+        height: 90%;
+        font-size: 1rem;
+        color: #000000;
+    }
+    .autor{
+        width: 90%;
+        height: 30vh;
+        margin: 2% 0 0 5%;
+    }
+    .autor .foto-autor{       
+        width: 30%;       
+    }
+    .autor .descricao-autor{
+        width: 65%;
+        height: 95%;
+    }
+    #disqus_thread{
+        width: 90%;
+    }
+    /* categoria */
+    .mais-lidas .noticias-editorias .wpp-list .mais-lidas-unidade-categoria{
+        width: 28%;
+     }
+     .mais-lidas .noticias-editorias .wpp-list .mais-lidas-unidade-categoria .noticia-editoria a div:first-child{        
+        height: 12vh;
+     }
+     .mais-lidas button{
+         top: 22.5%;
+     }
+     .mais-lidas .anterior{
+         left: 2.5%;
+     }
+     .mais-lidas .proximo{
+         left: 93.5%;
+     }
+}
