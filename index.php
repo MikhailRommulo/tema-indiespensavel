@@ -62,7 +62,7 @@
                         <a href="<?php the_permalink() ?>">
                             <div style="background-image: url(<?php the_post_thumbnail_url('corte_retangular_medio') ?>);">                                                                                      
                                 <p><?php the_title(); ?></p>
-                                <?php the_excerpt(); ?>
+                                <?php the_excerpt() ?>
                             </div>
                         </a>
                         <?php 
@@ -77,7 +77,7 @@
             endif;
             ?>
             <button id="btn_anterior_slider" class="anterior"><i class="fas fa-caret-left"></i></button>
-            <button id="btn_proximo_slider"class="proximo"><i class="fas fa-caret-right"></i></button>
+            <button id="btn_proximo_slider" class="proximo"><i class="fas fa-caret-right"></i></button>
         </section>
         <section class="ultimas-noticias">
             <div class="titulo-ultimas">

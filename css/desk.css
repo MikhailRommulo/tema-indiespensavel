@@ -240,7 +240,7 @@ main{
 }
 .secundario div .overflow-hidden div p{
     position: relative;
-    top: 55%;
+    top: 75%;
     transition: 0.5s;
 }
 .principal .overflow-hidden div{
@@ -275,8 +275,11 @@ main{
 .principal .overflow-hidden div:hover p, .secundario div .overflow-hidden div:hover p{
     transform: scale(0.95);
 }
+.secundario div .overflow-hidden div p:last-child{
+    display: none;
+}
 .secundario .overflow-hidden div:hover p{
-    top: 45%; 
+    top: 65%; 
 }
 .principal .overflow-hidden div:hover p{
     top: 70%;   

@@ -47,14 +47,14 @@
     }
     .secundario div .overflow-hidden div p{
         position: relative;
-        top: 75%;
+        top: 65%;
         transition: 0.5s;
     }
     .secundario div .overflow-hidden a div p:last-child{
         visibility: hidden;
     }
     .secundario .overflow-hidden div:hover p{
-        top: 65%; 
+        top: 55%; 
     }
     .principal .overflow-hidden div:hover p{
         top: 60%;   

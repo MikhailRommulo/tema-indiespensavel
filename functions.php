@@ -10,6 +10,11 @@
     add_image_size( 'corte_retangular_medio', 650, 276, true );
 
     add_image_size( 'corte_retangular_pequeno', 300, 176, true );
+
+    function custom_excerpt_length($length) {
+        return 15;
+    }
+    add_filter('excerpt_length', 'custom_excerpt_length');
     
     function criar_custom_post_slide(){
         $args_slides_post_type = array(
