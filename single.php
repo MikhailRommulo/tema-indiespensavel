@@ -1,6 +1,6 @@
-<?php get_header(); ?> 
+<?php get_header(); ?>
     <main>
-        <section class="noticia">
+        <div class="noticia">
             <div class="alinhamento-noticias">
                 <div class="corpo-noticia">
                     <div class="imagem-noticia" style="background-image: url(<?php the_post_thumbnail_url('corte_quadrado_grande') ?>);"></div>
@@ -16,7 +16,7 @@
                         <?php echo $post -> post_content ?>
                         </p>
                     </div>
-                </div> 
+                </div>
                 <div class="ultimas-editoria">
                 <?php
                 $the_cat = the_category_ID ('');
@@ -41,20 +41,8 @@
                 ?>
                 </div> 
             </div>        
-        </section>
-        <section class="autor">
-            <div class="foto-autor" <?php $email = get_the_author_email(); $grav_url = "http://www.gravatar.com/avatar.php?gravatar_id=".md5($email). "&default=".urlencode($GLOBALS['defaultgravatar'] ); $usegravatar = get_option('woo_gravatar');?> style="background-image: url(<?php echo $grav_url; ?>)"></div>
-            <div class="descricao-autor">
-                <div class="nome-autor"><?php echo get_the_author_firstname().' '.get_the_author_lastname() ?></div>
-                <div class="info-autor"><?php the_author_description() ?></div>
-                <?php if ( function_exists( 'wpsabox_author_box' ) ) echo wpsabox_author_box(); ?>
-                <div class="rede-sociais-autor">                    
-                    <a class="link-redes-sociais-autor" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="link-redes-sociais-autor" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a class="link-redes-sociais-autor" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </section>
+        </div>
+        <//?php tutsup_author_area() ?>
         <?php 
             $categoriaNome = get_cat_name( the_category_ID('') );
             echo '<input type="hidden" id="pegar-categoria" value="'.$categoriaNome.'"/>';

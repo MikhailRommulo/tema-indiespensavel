@@ -59,3 +59,51 @@
         update_post_meta( $post->ID, 'post-secundario2', $_POST['post-secundario2'] );
     }
     add_action( 'save_post', 'salvar_campos_slides');
+
+    if ( ! function_exists('tutsup_new_contact_fields') ) {
+
+        function tutsup_new_contact_fields( $contact_fields ) {
+            // Twitter
+            $contact_fields['twitter'] = 'Twitter';
+            
+            // Facebbok
+            $contact_fields['facebook'] = 'Facebook';
+            
+            // Instagram
+            $contact_fields['instagram'] = 'Instagram';
+    
+            return $contact_fields;
+        } 
+        
+        add_filter('user_contactmethods', 'tutsup_new_contact_fields', 10, 1);
+        
+    }
+
+    //if (! function_exists('tutsup_author_area') ){
+        function tutsup_author_area(){
+            if(is_single()):
+                $author_id = get_the_author_meta('ID');
+    ?>
+    
+                <section class="autor">
+                    <div class="foto-autor" style="background-image: url(<?php echo get_avatar_url( get_the_author_meta( 'user_email' ), 250 ); ?>)"></div>
+                    <div class="descricao-autor">
+                        <div class="nome-autor"><?php echo get_the_author(); ?></div>
+                        <div class="info-autor"><?php the_author_meta( 'description' ); ?></div>
+                        <div class="rede-sociais-autor">
+                            <?php if (get_the_author_meta('twitter', $author_id)):?>
+                                <a class="link-redes-sociais-autor" href="<?php echo get_the_author_meta('twitter', $author_id); ?>" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <?php endif; ?>
+                            <?php if ( get_the_author_meta( 'facebook', $author_id ) ): ?>
+                                <a class="link-redes-sociais-autor" href="<?php echo get_the_author_meta( 'facebook', $author_id ); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <?php endif;?>
+                            <?php if ( get_the_author_meta( 'instagram', $author_id ) ): ?>
+                                <a class="link-redes-sociais-autor" href="<?php echo get_the_author_meta('instagram',$author_id); ?>" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </section>
+            <?php endif; ?>
+    <?php
+        }
+    //}
