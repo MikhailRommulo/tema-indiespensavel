@@ -2,7 +2,7 @@
     <main>       
         <section class="slider-master">
         <?php 
-        $args_slide = array('post_type' => 'slides','cat'=>1);
+        $args_slide = array('post_type' => 'slides');
         $the_query_slides = new WP_Query( $args_slide );
         if($the_query_slides -> have_posts()):
             while($the_query_slides -> have_posts()):

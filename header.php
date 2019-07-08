@@ -16,7 +16,7 @@
 <body>
 <header>
         <i id="menu-hamburger" class="fas fa-bars"></i>
-        <a id="inicio" href="https://mikhailrommulo.000webhostapp.com/"><div class="logo"></div></a>       
+        <a id="inicio" href="http://indiespensavel.com/"><div class="logo"></div></a>       
         <nav>
             <ul>
                 <li><a class="cat-ativa" href="<?php echo esc_url(get_category_link(get_category_by_slug( 'noticias' ))) ?>"><?php echo  get_cat_name(get_cat_ID('Notícias' )) ?></a></li>

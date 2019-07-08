@@ -22,8 +22,7 @@
             'public' => true,
             'menu_icon' => 'dashicons-slides',
             'supports' => array('title','category'),
-            'register_meta_box_cb' => 'slide_meta_box',
-            'taxonomies' => array('category')
+            'register_meta_box_cb' => 'slide_meta_box'
         );
         register_post_type( 'slides', $args_slides_post_type );
     }
