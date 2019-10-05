@@ -45,9 +45,8 @@
             </div>
             <div class="noticias-categoria-container">
         <?php
-            $the_cat = the_category_ID ('');
             $the_post_id = get_the_ID();    
-            $args_post = array('post_type' => 'post', 'posts_per_page' => 20, 'cat' => $the_cat);
+            $args_post = array('post_type' => 'post', 'posts_per_page' => 20, 'cat' => $categoriaID);
             $the_query_post = new WP_Query( $args_post );
             if($the_query_post -> have_posts()):
                 while($the_query_post -> have_posts()):

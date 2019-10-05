@@ -19,7 +19,13 @@
                 </div>
                 <div class="ultimas-editoria">
                 <?php
-                $the_cat = the_category_ID ('');
+                $categories = get_the_category();
+                $the_cat = 0;
+                if($categories[0]->name == 'Notícias' && count($categories) > 1):
+                    $the_cat = $categories[1]->term_id;
+                else:
+                    $the_cat = $categories[0]->term_id;
+                endif;
                 $the_post_id = get_the_ID();    
                 $args_post = array('post_type' => 'post', 'posts_per_page' => 5, 'cat' => $the_cat, 'post__not_in' => array($the_post_id));
                 $the_query_post = new WP_Query( $args_post );
@@ -43,8 +49,8 @@
             </div>        
         </div>
         <//?php tutsup_author_area() ?>
-        <?php 
-            $categoriaNome = get_cat_name( the_category_ID('') );
+        <?php            
+            $categoriaNome = get_cat_name( $the_cat );
             echo '<input type="hidden" id="pegar-categoria" value="'.$categoriaNome.'"/>';
         ?> 
         <script src="<?php bloginfo('template_directory') ?>/js/pegar-redes-sociais.js"></script>
