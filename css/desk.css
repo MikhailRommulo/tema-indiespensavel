@@ -224,7 +224,7 @@ main{
     height: 100%;
 }
 .principal .overflow-hidden div p, .secundario div .overflow-hidden div p{
-    color: #ffffff;
+    color: #cde65e;
     font-weight: bold;
     margin: 0 2.5% 0 2.5%;
 }
