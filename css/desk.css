@@ -224,12 +224,12 @@ main{
     height: 100%;
 }
 .principal .overflow-hidden div p, .secundario div .overflow-hidden div p{
-    color: #cde65e;
+    color: #ffffff;
     font-weight: bold;
     margin: 0 2.5% 0 2.5%;
 }
 .principal .overflow-hidden div p:first-child, .secundario div .overflow-hidden div p:first-child{
-    color: #c42828;
+    color: #ffffff;
     font-weight: bold;
     font-size: 1.5rem;
 }
