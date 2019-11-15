@@ -235,7 +235,7 @@ main{
 }
 .principal .overflow-hidden div p{
     position: relative;
-    top: 70%;
+    top: 90%;
     transition: 0.5s;
 }
 .secundario div .overflow-hidden div p{
