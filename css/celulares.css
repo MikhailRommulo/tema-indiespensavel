@@ -99,16 +99,16 @@
         visibility: hidden;
     }
     .principal .overflow-hidden div p{        
-        top: 40%;       
+        top: 30%;       
     }
     .principal .overflow-hidden div:hover p{
-        top: 30%;   
+        top: 20%;   
     }
     .secundario div .overflow-hidden div p{
-        top: 60%;
+        top: 35%;
     }
     .secundario div:hover .overflow-hidden div p{
-        top: 50%;
+        top: 25%;
     }
     .slider-master button{    
         font-size: 1.5rem;        
