@@ -229,7 +229,7 @@ main{
     margin: 0 2.5% 0 2.5%;
 }
 .principal .overflow-hidden div p:first-child, .secundario div .overflow-hidden div p:first-child{
-    color: #ffffff;
+    color: #c42828;
     font-weight: bold;
     font-size: 1.5rem;
 }
