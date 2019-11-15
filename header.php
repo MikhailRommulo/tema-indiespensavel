@@ -29,7 +29,7 @@
                     <ul class="mais-opcoes">
                         <li><a href="<?php echo esc_url(get_category_link(get_category_by_slug('entrevistas'))) ?>"><?php echo  get_cat_name(get_cat_ID('Entrevistas')) ?></a></li>
                         <li><a href="<?php echo esc_url(get_category_link(get_category_by_slug('podcast'))) ?>"><?php echo  get_cat_name(get_cat_ID('Podcast')) ?></a></li>
-                        <li><a href="<?php echo esc_url(get_category_link(get_category_by_slug('artigos'))) ?>"><?php echo  get_cat_name(get_cat_ID('Artigos')) ?></a></li>
+                        <li><a href="<?php echo esc_url(get_category_link(get_category_by_slug('comportamento'))) ?>"><?php echo  get_cat_name(get_cat_ID('Comportamento')) ?></a></li>
                         <li><a href="<?php echo esc_url(get_category_link(get_category_by_slug( 'especiais' ))) ?>"><?php echo  get_cat_name(get_cat_ID('Especiais')) ?></a></li>
                     </ul>
                 </li>

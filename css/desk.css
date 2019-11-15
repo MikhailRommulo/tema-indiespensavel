@@ -235,12 +235,12 @@ main{
 }
 .principal .overflow-hidden div p{
     position: relative;
-    top: 80%;
+    top: 70%;
     transition: 0.5s;
 }
 .secundario div .overflow-hidden div p{
     position: relative;
-    top: 75%;
+    top: 65%;
     transition: 0.5s;
 }
 .principal .overflow-hidden div{
@@ -279,10 +279,10 @@ main{
     display: none;
 }
 .secundario .overflow-hidden div:hover p{
-    top: 65%; 
+    top: 55%; 
 }
 .principal .overflow-hidden div:hover p{
-    top: 70%;   
+    top: 60%;   
 }
 .slider-master button{
     background-color: #000000;

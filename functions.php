@@ -78,7 +78,7 @@
         
     }
 
-    //if (! function_exists('tutsup_author_area') ){
+    if (! function_exists('tutsup_author_area') ){
         function tutsup_author_area(){
             if(is_single()):
                 $author_id = get_the_author_meta('ID');
@@ -105,4 +105,4 @@
             <?php endif; ?>
     <?php
         }
-    //}
+    }
